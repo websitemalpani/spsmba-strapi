@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "Lead",
+    "description": "Admissions CRM lead record"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "mobile": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "Website",
+        "Walk-in",
+        "Referral",
+        "Call",
+        "Event",
+        "Other"
+      ],
+      "default": "Website"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Contacted",
+        "Qualified",
+        "Admitted",
+        "Lost"
+      ],
+      "default": "New"
+    },
+    "assignedTo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "convertedFromEnquiry": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::admission-enquiry.admission-enquiry"
+    },
+    "notes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lead-note.lead-note",
+      "mappedBy": "lead"
+    }
+  }
+}

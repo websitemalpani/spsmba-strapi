@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admission_enquiries",
+  "info": {
+    "singularName": "admission-enquiry",
+    "pluralName": "admission-enquiries",
+    "displayName": "Admission Enquiry",
+    "description": "Public admission enquiry form submissions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "mobile": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "graduation": {
+      "type": "string"
+    },
+    "percentage": {
+      "type": "decimal"
+    },
+    "cetStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Appeared",
+        "Registered",
+        "Planning to register"
+      ]
+    },
+    "specialization": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Contacted",
+        "Follow-up",
+        "Admitted",
+        "Rejected",
+        "Closed"
+      ],
+      "default": "New"
+    },
+    "source": {
+      "type": "string",
+      "default": "Website"
+    },
+    "assignedTo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "followUpAt": {
+      "type": "datetime"
+    }
+  }
+}

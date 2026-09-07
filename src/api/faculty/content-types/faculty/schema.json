@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faculties",
+  "info": {
+    "singularName": "faculty",
+    "pluralName": "faculties",
+    "displayName": "Faculty",
+    "description": "Teaching staff profiles"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "designation": {
+      "type": "string"
+    },
+    "qualification": {
+      "type": "text"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "specialization": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "richtext"
+    },
+    "researchInterests": {
+      "type": "json"
+    },
+    "publications": {
+      "type": "json"
+    },
+    "email": {
+      "type": "email"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

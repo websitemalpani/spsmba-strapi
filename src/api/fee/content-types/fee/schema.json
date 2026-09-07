@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fees",
+  "info": {
+    "singularName": "fee",
+    "pluralName": "fees",
+    "displayName": "Fee Structure",
+    "description": "FRA-approved fee line items"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "programName": {
+      "type": "string"
+    },
+    "academicYear": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "General",
+        "Reserved",
+        "Management/Institute",
+        "NRI"
+      ]
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "frequency": {
+      "type": "enumeration",
+      "enum": [
+        "Annual",
+        "Semester",
+        "One-time"
+      ],
+      "default": "Annual"
+    },
+    "documentRef": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

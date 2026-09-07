@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admissions",
+  "info": {
+    "singularName": "admission",
+    "pluralName": "admissions",
+    "displayName": "Admission Cycle",
+    "description": "Yearly admission process configuration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "academicYear": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "instituteCode": {
+      "type": "string"
+    },
+    "openDate": {
+      "type": "date"
+    },
+    "closeDate": {
+      "type": "date"
+    },
+    "eligibilityGeneral": {
+      "type": "string"
+    },
+    "eligibilityReserved": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "json"
+    },
+    "documentsRequired": {
+      "type": "json"
+    },
+    "notes": {
+      "type": "richtext"
+    },
+    "cetCellUrl": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

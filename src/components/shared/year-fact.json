@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_shared_year_facts",
+  "info": { "displayName": "Year Fact", "icon": "calendar" },
+  "options": {},
+  "attributes": {
+    "year": { "type": "string", "required": true },
+    "text": { "type": "text", "required": true }
+  }
+}

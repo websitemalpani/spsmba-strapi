@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "Content for the About page (history, mission, vision, chairman's message)"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "foundationEyebrow": { "type": "string" },
+    "foundationTitle": { "type": "string" },
+    "foundationBody": { "type": "richtext" },
+    "timeline": { "type": "component", "repeatable": true, "component": "shared.year-fact" },
+    "missionEyebrow": { "type": "string" },
+    "missionTitle": { "type": "string" },
+    "missionBody": { "type": "richtext" },
+    "missionQuote": { "type": "text" },
+    "visionBody": { "type": "text" },
+    "chairmanQuote": { "type": "text" },
+    "chairmanBody": { "type": "richtext" },
+    "chairmanName": { "type": "string" },
+    "chairmanTitle": { "type": "string" },
+    "chairmanPhoto": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "approvalsNote": { "type": "text" }
+  }
+}

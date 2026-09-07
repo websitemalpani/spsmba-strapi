@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_committee_members",
+  "info": {
+    "displayName": "Committee Member",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Chairperson",
+        "Convenor",
+        "Secretary",
+        "Member"
+      ],
+      "default": "Member"
+    },
+    "contact": {
+      "type": "string"
+    }
+  }
+}

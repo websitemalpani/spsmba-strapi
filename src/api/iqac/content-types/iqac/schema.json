@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iqac_records",
+  "info": {
+    "singularName": "iqac",
+    "pluralName": "iqacs",
+    "displayName": "IQAC Record",
+    "description": "Yearly IQAC composition and reports"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "academicYear": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "aqarReport": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "meetingMinutes": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "composition": {
+      "type": "json"
+    },
+    "objectives": {
+      "type": "json"
+    },
+    "functionsDescription": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

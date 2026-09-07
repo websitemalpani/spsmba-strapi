@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quick_links",
+  "info": {
+    "singularName": "quick-link",
+    "pluralName": "quick-links",
+    "displayName": "Quick Link",
+    "description": "Horizontal quick-link buttons shown on the homepage"
+  },
+  "options": { "draftAndPublish": false },
+  "pluginOptions": {},
+  "attributes": {
+    "label": { "type": "string", "required": true },
+    "href": { "type": "string", "required": true },
+    "order": { "type": "integer", "default": 0 },
+    "active": { "type": "boolean", "default": true }
+  }
+}

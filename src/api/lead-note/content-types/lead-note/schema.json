@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lead_notes",
+  "info": {
+    "singularName": "lead-note",
+    "pluralName": "lead-notes",
+    "displayName": "Lead Note",
+    "description": "Follow-up notes on a CRM lead"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lead": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::lead.lead",
+      "inversedBy": "notes"
+    },
+    "note": {
+      "type": "text",
+      "required": true
+    },
+    "followUpAt": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Open",
+        "In Progress",
+        "Closed"
+      ],
+      "default": "Open"
+    },
+    "createdByStaff": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}

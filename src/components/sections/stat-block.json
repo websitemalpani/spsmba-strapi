@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_stat_blocks",
+  "info": {
+    "displayName": "Stat Block",
+    "icon": "chart-bar"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "suffix": {
+      "type": "string"
+    }
+  }
+}

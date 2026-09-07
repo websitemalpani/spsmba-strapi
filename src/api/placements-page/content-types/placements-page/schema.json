@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "placements_pages",
+  "info": {
+    "singularName": "placements-page",
+    "pluralName": "placements-pages",
+    "displayName": "Placements Page",
+    "description": "Content for the Placements page (process, policy, disclaimer)"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "processSteps": { "type": "json" },
+    "policyRules": { "type": "json" },
+    "prepTitle": { "type": "string" },
+    "prepBody": { "type": "richtext" },
+    "disclaimer": { "type": "text" }
+  }
+}

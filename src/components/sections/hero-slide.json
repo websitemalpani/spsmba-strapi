@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_hero_slides",
+  "info": { "displayName": "Hero Slide", "icon": "images" },
+  "options": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"], "required": true },
+    "eyebrow": { "type": "string" },
+    "title": { "type": "string", "required": true },
+    "accent": { "type": "string" },
+    "copy": { "type": "text" },
+    "buttonLabel": { "type": "string" },
+    "buttonHref": { "type": "string" },
+    "order": { "type": "integer", "default": 0 }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_sections_photo_captions",
+  "info": { "displayName": "Photo + Caption", "icon": "picture" },
+  "options": {},
+  "attributes": {
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"], "required": true },
+    "caption": { "type": "string" },
+    "order": { "type": "integer", "default": 0 }
+  }
+}

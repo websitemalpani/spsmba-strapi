@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_popups",
+  "info": {
+    "singularName": "homepage-popup",
+    "pluralName": "homepage-popups",
+    "displayName": "Homepage Popup",
+    "description": "Toggleable announcement popup shown on the homepage"
+  },
+  "options": { "draftAndPublish": false },
+  "pluginOptions": {},
+  "attributes": {
+    "enabled": { "type": "boolean", "default": false },
+    "title": { "type": "string" },
+    "message": { "type": "text" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "buttonLabel": { "type": "string" },
+    "buttonHref": { "type": "string" },
+    "startDate": { "type": "date" },
+    "endDate": { "type": "date" }
+  }
+}
